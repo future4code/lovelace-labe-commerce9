@@ -5,7 +5,7 @@ import ListaDeProdutos from './Componentes/Produto/ListaDeProdutos'
 import CarrinhoCompras from './Componentes/Carrinho/CarrinhoCompras'
 import FiltroProdutos from './Componentes/FiltroPrecos/FiltroProdutos'
 //import img1 from
-import img from './Componentes/img/marte.jpeg';
+
 
 
 const Botaoabrir = styled.button`
@@ -16,7 +16,7 @@ const Botaoabrir = styled.button`
   margin: 0% 0% 0% 94.5%;
   z-index: 1000;
   &:hover {
-    background-color: #73D8FF;
+    background-color: #B8860B;
   }
 `
 const Filtro = styled.section`
@@ -25,7 +25,7 @@ const Filtro = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #00BCD4;
+  background-color: #D2691E;
   position: relative;
   grid-row: 2;
   grid-column: 1;
@@ -42,7 +42,7 @@ const Header = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F78DA7;
+  background-color: #DAA520;
   position: relative;
   max-height: 100vh;
   max-width: 100vw;
@@ -53,7 +53,7 @@ const Footer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F78DA7;
+  background-color: #DAA520;
   position: relative;
   max-height: 100vh;
   max-width: 100vw;
@@ -61,51 +61,55 @@ const Footer = styled.section`
   grid-column: 1/4;
 `
 
+
+
+
 const produtosLista = [
   {
     id: 1,
 
     nome: 'Viagem à Lua',
     preco: 1000000,
-    imagem: './Componentes/img/lua.jpeg', 
+    imagem: '/img/lua.jpeg', 
     quantidade: 3
   },
   {
     id: 2,
     nome: 'Viagem a Marte',
     preco: 2000000,
-    imagem: './Componentes/img/marte2.jpeg',
+    imagem: '/img/marte.jpeg',
     quantidade: 2
   },
   {
     id: 3,
     nome: 'Viagem a Vênus',
     preco: 3000000,
-    imagem: './Componentes/img/venus.jpeg',
+    imagem: '/img/venus.jpeg',
     quantidade: 1
   },
   {
     id: 4,
     nome: 'Viagem a Júpiter',
     preco: 8000000,
-    imagem: './Componentes/img/jupter.jpeg',
+    imagem: '/img/jupter.jpeg',
     quantidade: 2
   },
   {
     id: 5,
     nome: 'Viagem a Saturno',
     preco: 9000000,
-    imagem: './Componentes/img/saturno.jpeg',
+    imagem: '/img/saturno.jpeg',
     quantidade: 2
   },
   {
     id: 6,
     nome: 'Viagem a Plutão',
     preco: 12000000,
-    imagem: './Componentes/img/plutao.jpeg',
+    imagem: '/img/plutao.jpeg',
     quantidade: 3
   }
 ]
+
 
 class App extends React.Component {
   state = {
