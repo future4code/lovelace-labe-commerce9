@@ -5,6 +5,7 @@ import ListaDeProdutos from './Componentes/Produto/ListaDeProdutos'
 import CarrinhoCompras from './Componentes/Carrinho/CarrinhoCompras'
 import FiltroProdutos from './Componentes/FiltroPrecos/FiltroProdutos'
 //import img1 from
+import img from './Componentes/img/marte.jpeg';
 
 
 const Botaoabrir = styled.button`
@@ -66,42 +67,42 @@ const produtosLista = [
 
     nome: 'Viagem à Lua',
     preco: 1000000,
-    //imagem: img1,
+    imagem: './Componentes/img/lua.jpeg', 
     quantidade: 3
   },
   {
     id: 2,
     nome: 'Viagem a Marte',
     preco: 2000000,
-    //imagem: img2,
+    imagem: './Componentes/img/marte2.jpeg',
     quantidade: 2
   },
   {
     id: 3,
     nome: 'Viagem a Vênus',
     preco: 3000000,
-    //imagem: img3,
+    imagem: './Componentes/img/venus.jpeg',
     quantidade: 1
   },
   {
     id: 4,
     nome: 'Viagem a Júpiter',
     preco: 8000000,
-    //imagem: img3,
+    imagem: './Componentes/img/jupter.jpeg',
     quantidade: 2
   },
   {
     id: 5,
     nome: 'Viagem a Saturno',
     preco: 9000000,
-    //imagem: img3,
+    imagem: './Componentes/img/saturno.jpeg',
     quantidade: 2
   },
   {
     id: 6,
     nome: 'Viagem a Plutão',
     preco: 12000000,
-    //imagem: img3,
+    imagem: './Componentes/img/plutao.jpeg',
     quantidade: 3
   }
 ]
@@ -152,6 +153,7 @@ class App extends React.Component {
           min={this.state.ValorMin}
           max={this.state.ValorMax}
           nome={this.state.NomeProduto}
+          
         />
         <Filtro>
           <h2>Filtro</h2>
@@ -173,7 +175,7 @@ class App extends React.Component {
             ></input>
           </ul>
         </Filtro>
-        <Footer>Este site foi desenvolvido pelo grupo 9</Footer>
+        <Footer>Este site foi desenvolvido por Ana Beatriz, Yara Tacy e Felipe Vieira</Footer>
       </ContainerPrincipal>
     )
   }

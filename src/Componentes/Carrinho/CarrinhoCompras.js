@@ -27,6 +27,7 @@ const ProdutoItem = styled.li`
 class CarrinhoCompras extends React.Component {
   render() {
     return <Carrinho></Carrinho>
+    
   }
 }
 export default CarrinhoCompras

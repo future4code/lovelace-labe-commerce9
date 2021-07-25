@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
 const ProdutoList = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 2fr);
@@ -30,15 +31,18 @@ const ProdutoItem = styled.div`
 
 function ListaDeProdutos(props) {
   return (
+    
     <div>
       <ProdutoList>
         {props.produtos.map(item => {
           return (
+        
             <ProdutoItem>
               <p>{item.nome}</p>
-              <img src={item.imagem} />
+              <img src={item.imagem}/>
               <p> {item.preco}</p>
             </ProdutoItem>
+          
           )
         })}
       </ProdutoList>
