@@ -1,1 +1,10 @@
-Sejam bem vindos ao Labe-commerce, esse repositório contém um esqueleto de app React e um .gitignore.
+```Trabalho em grupo Labe-commerce
+
+Integrantes: Felipe Vieira, Ana Beatriz, Yara Tacy 
+
+Conseguimos fazer o layout 
+Filtro está funcionando
+
+https://light-tail.surge.sh/
+
+
